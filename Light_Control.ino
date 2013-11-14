@@ -26,7 +26,7 @@ void setup() {
 void loop() {
   int r;
   while( (r = Serial.read()) != -1) {
-    if(r == 0 || r == '0')
+    if(r == 0)
       state = -1;
     
     state++;
